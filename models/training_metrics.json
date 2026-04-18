@@ -1,0 +1,64 @@
+{
+  "trained_at_utc": "2026-04-17T07:21:50.208456+00:00",
+  "sklearn_version": "1.4.2",
+  "logic_version": "2026-03-14-filter-aware-v1",
+  "feature_columns": [
+    "pm25",
+    "aqi",
+    "co2",
+    "temperature",
+    "humidity",
+    "pollution_pressure",
+    "comfort_gap",
+    "ventilation_need",
+    "conflict_score",
+    "co2_vs_pollution"
+  ],
+  "samples": 3000,
+  "train_samples": 2400,
+  "test_samples": 600,
+  "accuracy": 0.9833333333333333,
+  "class_distribution": {
+    "fresh_air": 1785,
+    "recirculation": 1215
+  },
+  "feature_importance": {
+    "co2_vs_pollution": 0.1792748188646722,
+    "ventilation_need": 0.1769469632513664,
+    "co2": 0.15329664667136428,
+    "pm25": 0.11349456425751552,
+    "comfort_gap": 0.09480331946449798,
+    "temperature": 0.08758032605006376,
+    "pollution_pressure": 0.08298693705872304,
+    "aqi": 0.05174573793984895,
+    "humidity": 0.050161470022981026,
+    "conflict_score": 0.00970921641896697
+  },
+  "classification_report": {
+    "fresh_air": {
+      "precision": 0.9859943977591037,
+      "recall": 0.9859943977591037,
+      "f1-score": 0.9859943977591037,
+      "support": 357.0
+    },
+    "recirculation": {
+      "precision": 0.9794238683127572,
+      "recall": 0.9794238683127572,
+      "f1-score": 0.9794238683127572,
+      "support": 243.0
+    },
+    "accuracy": 0.9833333333333333,
+    "macro avg": {
+      "precision": 0.9827091330359304,
+      "recall": 0.9827091330359304,
+      "f1-score": 0.9827091330359304,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 0.9833333333333333,
+      "recall": 0.9833333333333333,
+      "f1-score": 0.9833333333333333,
+      "support": 600.0
+    }
+  }
+}

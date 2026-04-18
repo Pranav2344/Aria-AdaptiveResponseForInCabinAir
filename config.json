@@ -1,0 +1,36 @@
+{
+  "project_name": "ARIA - Adaptive Response for In-Cabin Air",
+  "paths": {
+    "training_data": "data/air_quality_data.csv",
+    "live_data": "data/air_quality_live.csv",
+    "model": "models/aria_model.joblib",
+    "metrics": "models/training_metrics.json",
+    "decision_log": "logs/decisions.csv"
+  },
+  "limits": {
+    "safe": {
+      "pm25": 35.0,
+      "aqi": 100.0,
+      "co2": 1000.0,
+      "temperature_min": 20.0,
+      "temperature_max": 27.0,
+      "humidity_min": 35.0,
+      "humidity_max": 65.0
+    },
+    "critical": {
+      "pm25": 120.0,
+      "aqi": 220.0,
+      "co2": 1800.0
+    }
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "poll_interval_seconds": 4
+  },
+  "training": {
+    "rows": 3000,
+    "test_size": 0.2,
+    "random_state": 42
+  }
+}
