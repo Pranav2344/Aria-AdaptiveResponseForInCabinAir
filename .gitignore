@@ -5,3 +5,4 @@ __pycache__/
 *.pyd
 .Python
 .pytest_cache/
+# commit-button-activation-test
